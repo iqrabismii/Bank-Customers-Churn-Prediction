@@ -16,6 +16,10 @@ import matplotlib.pyplot as plt
 
 import warnings
 warnings.filterwarnings('ignore')
+import sklearn.model_selection
+import sklearn.preprocessing
+import sklearn.compose
+import sklearn.pipeline
 
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder, MinMaxScaler,OneHotEncoder,LabelBinarizer
@@ -23,7 +27,7 @@ from sklearn.compose import ColumnTransformer,make_column_transformer
 
 from sklearn.pipeline import make_pipeline
 
-from sklearn.metrics import confusion_matrix, classification_report
+
 
 from imblearn.pipeline import make_pipeline as imbl_pipe
 from imblearn.over_sampling import SMOTE
@@ -44,10 +48,6 @@ from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.ensemble import AdaBoostClassifier
 import xgboost as xgb
 
-from sklearn.metrics import confusion_matrix, precision_score, recall_score,f1_score
-from sklearn.metrics import roc_auc_score
-from sklearn.metrics import roc_curve
-from sklearn.metrics import plot_confusion_matrix
 
 
 
